@@ -94,7 +94,7 @@ public class BaseTest {
                 firefoxOptions.addArguments("--headless");
                 firefoxOptions.addArguments("--disable-gpu");
                 firefoxOptions.addArguments("--no-sandbox");
-                firefoxOptions.addArguments("--remote-allow-origins=*");
+                //firefoxOptions.addArguments("--remote-allow-origins=*");
                 //options.addArguments("--disable-dev-shm-usage");
                 driver = new FirefoxDriver(firefoxOptions);
 
