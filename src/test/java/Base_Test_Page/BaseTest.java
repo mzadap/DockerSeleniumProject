@@ -74,7 +74,8 @@ public class BaseTest {
                 options.addArguments("--disable-gpu");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--remote-allow-origins=*");
-                driver = new ChromeDriver();
+                //options.addArguments("--disable-dev-shm-usage");
+                driver = new ChromeDriver(options);
 
             }
         } else if (browser.equalsIgnoreCase("firefox")) {
