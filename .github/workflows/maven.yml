@@ -49,3 +49,10 @@ jobs:
         name: spartHTML
         path: ./report/*.html
 
+#     Log file generations
+    - name: log report
+        uses: actions/upload-artifact@v3
+        with:
+          name: Log file
+          path: ./logs/*.log
+
