@@ -63,7 +63,8 @@ public class BaseTest {
                 options.setPlatformName("linux");
                 options.setPageLoadStrategy(PageLoadStrategy.EAGER);
                 try {
-                    driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+                    //driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+                    driver = new RemoteWebDriver(new URL("http://192.168.1.15:4444/wd/hub"), options);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
@@ -86,7 +87,8 @@ public class BaseTest {
                 firefoxOptions.setPlatformName("linux");
                 firefoxOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
                 try {
-                    driver = new RemoteWebDriver(new URL("http://localhost:4444"), firefoxOptions);
+                    //driver = new RemoteWebDriver(new URL("http://localhost:4444"), firefoxOptions);
+                    driver = new RemoteWebDriver(new URL("http://192.168.1.15:4444/wd/hub"), firefoxOptions);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
