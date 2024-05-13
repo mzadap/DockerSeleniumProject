@@ -9,6 +9,15 @@
 name: Java CI with Maven
 
 on:
+  workflow_dispatch:
+    inputs:
+      browsername:
+        type: string
+        description: 'browser name'
+        default: 'chrome'
+      xmlfilename:
+        type: string
+        description: 'enter suite xml file name'
   push:
     branches: [ "master" ]
   pull_request:
@@ -28,5 +37,15 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build using testng xml file
-      run: mvn clean test
+      run: >
+        mvn clean test
+        -Dsurefile.suiteXmlFiles=${{inputs.xmlfilename}}
+        -Dmaven.test.failure.ignore=true
+
+#     Report generations
+    - name: archive report
+      uses: actions/upload-artifact@v3
+      with:
+        name: spartHTML
+        path: ./report/*.html
 
