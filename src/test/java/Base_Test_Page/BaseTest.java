@@ -69,6 +69,13 @@ public class BaseTest {
                     throw new RuntimeException(e);
                 }
 
+            } else if (AppConstants.platform.equalsIgnoreCase("remote_git")) {
+                options.addArguments("--headless");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--remote-allow-origins=*");
+                driver = new ChromeDriver();
+
             }
         } else if (browser.equalsIgnoreCase("firefox")) {
             if (AppConstants.platform.equalsIgnoreCase("local")) {
