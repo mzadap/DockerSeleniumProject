@@ -51,7 +51,6 @@ public class BaseTest {
             browser = AppConstants.browserName;
         }
 
-        System.out.println("Browser running " + browser);
 
         //ChromeOptions chromeOptions = new ChromeOptions();
         if (browser.equalsIgnoreCase("chrome")) {
@@ -78,6 +77,7 @@ public class BaseTest {
                 driver = new ChromeDriver(options);
 
             }
+            logger.info("brower name is : " + browser);
         } else if (browser.equalsIgnoreCase("firefox")) {
             if (AppConstants.platform.equalsIgnoreCase("local")) {
                 WebDriverManager.firefoxdriver().setup();
@@ -99,6 +99,7 @@ public class BaseTest {
                 driver = new FirefoxDriver(firefoxOptions);
 
             }
+            logger.info("brower name is : " + browser);
         } else {
             logger.info("Browser name entered is not supported!!!" +browser);
             //System.out.println("Browser name entered is not supported!!!");
