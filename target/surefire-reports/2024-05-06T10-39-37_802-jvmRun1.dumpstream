@@ -1,0 +1,37 @@
+# Created at 2024-05-06T10:39:41.578
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2024-05-06T10:39:51.454
+Unexpected IOException: 5,1,Base_Test_Page.ProductPageTest,testItemName(Base_Test_Page.ProductPageTest),Base_Test_Page.ProductPageTest,null,null
+
+
+# Created at 2024-05-06T10:39:51.456
+Unexpected IOException: 5,1,Base_Test_Page.LoginTest,loginTests(Base_Test_Page.LoginTest),Base_Test_Page.LoginTest,null,null
+
+
+# Created at 2024-05-06T10:39:53.599
+Unexpected IOException with stream: Products
+
+
+# Created at 2024-05-06T10:39:53.606
+Unexpected IOException: 6,1,Base_Test_Page.LoginTest,loginTests(Base_Test_Page.LoginTest),null,null,null
+
+
+# Created at 2024-05-06T10:39:58.570
+Unexpected IOException with stream: Sauce Labs Backpack
+
+
+# Created at 2024-05-06T10:39:58.575
+Unexpected IOException: 6,1,Base_Test_Page.ProductPageTest,testItemName(Base_Test_Page.ProductPageTest),null,null,null
+
+
+# Created at 2024-05-06T10:40:00.886
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

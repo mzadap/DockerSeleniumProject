@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-11T12:50:21 IST" name="All Test Suite" finished-at="2024-05-11T12:51:05 IST" duration-ms="43578">
+    <groups>
+    </groups>
+    <test started-at="2024-05-11T12:50:21 IST" name="test 1" finished-at="2024-05-11T12:50:49 IST" duration-ms="28326">
+      <class name="Base_Test_Page.LoginTest">
+        <test-method is-config="true" signature="setupTest(java.lang.String,org.testng.ITestResult)[pri:0, instance:Base_Test_Page.LoginTest@3b4ef7]" started-at="2024-05-11T12:50:21 IST" name="setupTest" finished-at="2024-05-11T12:50:39 IST" duration-ms="18176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTests()[pri:0, instance:Base_Test_Page.LoginTest@3b4ef7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="loginTests()[pri:0, instance:Base_Test_Page.LoginTest@3b4ef7]" started-at="2024-05-11T12:50:39 IST" name="loginTests" finished-at="2024-05-11T12:50:48 IST" duration-ms="8515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTests -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Base_Test_Page.LoginTest@3b4ef7]" started-at="2024-05-11T12:50:48 IST" name="tearDown" finished-at="2024-05-11T12:50:48 IST" duration-ms="349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTests status=SUCCESS method=LoginTest.loginTests()[pri:0, instance:Base_Test_Page.LoginTest@3b4ef7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushTestReport()[pri:0, instance:Base_Test_Page.LoginTest@3b4ef7]" started-at="2024-05-11T12:50:48 IST" name="flushTestReport" finished-at="2024-05-11T12:50:49 IST" duration-ms="1124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushTestReport -->
+      </class> <!-- Base_Test_Page.LoginTest -->
+    </test> <!-- test 1 -->
+    <test started-at="2024-05-11T12:50:21 IST" name="test 2 " finished-at="2024-05-11T12:51:05 IST" duration-ms="43577">
+      <class name="Base_Test_Page.ProductPageTest">
+        <test-method is-config="true" signature="setupTest(java.lang.String,org.testng.ITestResult)[pri:0, instance:Base_Test_Page.ProductPageTest@7d2a6eac]" started-at="2024-05-11T12:50:21 IST" name="setupTest" finished-at="2024-05-11T12:50:53 IST" duration-ms="31402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ProductPageTest.testItemName()[pri:0, instance:Base_Test_Page.ProductPageTest@7d2a6eac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="testItemName()[pri:0, instance:Base_Test_Page.ProductPageTest@7d2a6eac]" started-at="2024-05-11T12:50:53 IST" name="testItemName" finished-at="2024-05-11T12:51:02 IST" duration-ms="8934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testItemName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Base_Test_Page.ProductPageTest@7d2a6eac]" started-at="2024-05-11T12:51:02 IST" name="tearDown" finished-at="2024-05-11T12:51:05 IST" duration-ms="2996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testItemName status=SUCCESS method=ProductPageTest.testItemName()[pri:0, instance:Base_Test_Page.ProductPageTest@7d2a6eac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushTestReport()[pri:0, instance:Base_Test_Page.ProductPageTest@7d2a6eac]" started-at="2024-05-11T12:51:05 IST" name="flushTestReport" finished-at="2024-05-11T12:51:05 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushTestReport -->
+      </class> <!-- Base_Test_Page.ProductPageTest -->
+    </test> <!-- test 2  -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="tests" name="test 2 (failed)" verbose="0">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="Base_Test_Page.ProductPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setupTest"/>
+          <include name="testItemName"/>
+          <include name="flushTestReport"/>
+        </methods>
+      </class> <!-- Base_Test_Page.ProductPageTest -->
+    </classes>
+  </test> <!-- test 2 (failed) -->
+  <test thread-count="2" parallel="tests" name="test 1(failed)" verbose="0">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="Base_Test_Page.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setupTest"/>
+          <include name="loginTests"/>
+          <include name="flushTestReport"/>
+        </methods>
+      </class> <!-- Base_Test_Page.LoginTest -->
+    </classes>
+  </test> <!-- test 1(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
