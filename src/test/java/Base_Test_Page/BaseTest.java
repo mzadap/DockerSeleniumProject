@@ -90,6 +90,14 @@ public class BaseTest {
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
+            } else if (AppConstants.platform.equalsIgnoreCase("remote_git")) {
+                firefoxOptions.addArguments("--headless");
+                firefoxOptions.addArguments("--disable-gpu");
+                firefoxOptions.addArguments("--no-sandbox");
+                firefoxOptions.addArguments("--remote-allow-origins=*");
+                //options.addArguments("--disable-dev-shm-usage");
+                driver = new FirefoxDriver(firefoxOptions);
+
             }
         } else {
             logger.info("Browser name entered is not supported!!!" +browser);
